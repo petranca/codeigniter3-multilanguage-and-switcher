@@ -88,9 +88,8 @@ $autoload['helper'] = array('url');
 </pre>
 
 ## 7. Insert language switcher in your view
-<pre>
+
 <select onchange="javascript:window.location.href='<?php echo base_url();>index.php/LanguageSwitcher/switchLang/'+this.value;">
 <option value="en" <?php if($this->session->userdata('site_lang') == 'en') echo 'selected="selected"'; ?>>English</option>
 <option value="de" <?php if($this->session->userdata('site_lang') == 'de') echo 'selected="selected"'; ?>>Deutsch</option>
 </select>
-</pre>
